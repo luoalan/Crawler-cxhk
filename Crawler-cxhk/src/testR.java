@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import cn.edu.hfut.dmic.webcollector.crawler.BreadthCrawler;
 import cn.edu.hfut.dmic.webcollector.model.Page;
 
-    public class test extends BreadthCrawler{  
+    public class testR extends BreadthCrawler{  
       
         /*visit函数定制访问每个页面时所需进行的操作*/  
         @Override  
@@ -17,6 +17,7 @@ import cn.edu.hfut.dmic.webcollector.model.Page;
                 System.out.println(title);  
                 /*抽取提问内容*/  
                 String question=page.getDoc().select("div[id=zh-question-detail]").text();  
+                System.out.println(question);  
                 System.out.println(question);  
       
             }  
