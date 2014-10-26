@@ -10,6 +10,7 @@ public class RemindTask extends TimerTask {
 		FlyPlanCrawler crawler = new FlyPlanCrawler();
 		crawler.addSeed("http://help.ch.com/services/FlightDate");
 		crawler.addRegex(".*");
+		crawler.setThreads(5);		
 				
 		/* 设置User-Agent */		
 		crawler.setUseragent("Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:26.0) Gecko/20100101 Firefox/26.0");
